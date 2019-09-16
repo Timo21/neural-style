@@ -31,10 +31,13 @@ Het model kan gedownload worden door [hier te klikken][net]. Als de download kla
 ## Python
 
 ### Toelichting
+Zoals eerder beschreven gaan we hier geen uitgebreide instructie over Python geven maar toch wat toelichting. Python is net als R een open-source programmeertaal waarmee je allerlei berekeningen, data analyses en visualisaties kan maken. De syntax, de manier waarop je de taal schrijft, verschilt van R, maar alles dat je in de opleiding in R geleerd hebt is ook op een manier in Python mogelijk. Wat zijn dan belangrijke verschillen? In beide talen zijn verschillende packages beter uitgewerkt door de community. Zo zijn in R meer packages beschikbaar voor uitgebreide statistische analyse en is er in Python meer beschikbaar om hele andere dingen te doen zoals websites bouwen. R is van oudsher een taal ontwikkeld voor en door statistici en data analisten, Python voor en door programmeurs. Daardoor is het in de regel in R makkelijker lokaal op je laptop een gedegen analyse te maken, maar is het in Python makkelijker je analyse aan miljoenen mensen stabiel online beschikbaar te stellen. Voor meer informatie over verschillen tussen beide biedt [deze website een goed overzicht](https://www.guru99.com/r-vs-python.html#targetText=R%20is%20mainly%20used%20for,of%20course%2C%20the%20ideal%20solution).
 
 ### Acties
 Download de laatste versie van Python door [op deze website](https://www.python.org/downloads/) op de gele download knop te klikken.
-![Afbeelding](http://imagizer.imageshack.us/v2/xq90/923/4Qfi5o.jpg)
+In de eeste stap van de installer moet "Add to PATH" worden aangevinkt *(belangrijk!)* zoals in onderstaande afbeelding, verder kunnen de standaard instructies van de installer gevolgd worden.
+
+![Afbeelding](https://vgkits.org/blog/wp-content/uploads/2018/05/windows-add-python-path.jpg)
 
 ## De command line
 
