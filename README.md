@@ -20,9 +20,39 @@ Voor al die bewerkingen wordt het programma GIT gebruikt. Vandaag zullen we dat 
 ### Acties
 Wat we wel gaan doen is de code simpelweg downloaden. Rechts bovenaan deze pagina vind je een groene knop met "Clone or download". Als je daarop klikt zie je de git URL die je zou kunnen gebruiken als je git gebruikt. Wij gaan echter voor "Download ZIP" waardoor de code als zip folder in je downloads terecht komt. Pak de map uit met je favoriete zip-programma en kopieer de map naar een plek op je laptop waar je hem terug kan vinden.
 
+## Het model downloaden
+
+### Toelichting
+Het model is een groot bestand en github is niet gemaakt voor hele grote bestanden. Naast dat het bedrijf de opslagruimte voor bestanden gratis beschikbaar stelt en dus niet wil dat je gigabytes aan bestanden plaatst is het ook onhandig om versie verschillen bij te houden in hele grote bestanden. Het model moet daarom los gedownload worden. Het zal een paar minuten duren dus lees rustig verder terwijl het gedownload wordt. 
+
+### Acties
+Het model kan gedownload worden door [hier te klikken][net]. Als de download klaar is verplaats het model dan naar de map met de code die je in de vorige stap gedownload hebt.
+
 ## Python
 
+### Toelichting
 
+### Acties
+Download de laatste versie van Python door [op deze website](https://www.python.org/downloads/) op de gele download knop te klikken.
+![Afbeelding](http://imagizer.imageshack.us/v2/xq90/923/4Qfi5o.jpg)
+
+## De command line
+
+### Toelichting
+
+### Acties
+
+## Python libraries
+
+### Toelichting
+
+### Acties
+
+## Runnen!
+
+### Toelichting
+
+### Acties
 
 ## Related Projects
 
