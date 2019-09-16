@@ -77,9 +77,13 @@ Je bent er eindelijk klaar voor om met behulp van Neural Networks een schilderst
 
 ### Acties
 Vanaf de commandline kun je met dit commando een afbeelding produceren:
+
 `python neural_style.py --content <content file> --styles <style file> --output <output file>`
+
 Dus bijvoorbeeld met:
+
 `python neural_style.py --content examples/emiel.jpg --styles examples/1-style.jpg --output output_foto.jpg`
+
 Je kan tekst zoals deze naar de command prompt plakken door normaal te kopieren (ctrl+c) en te plakken met shift+insert in de command prompt. Zet in de examples folder je eigen foto's, pas het commando aan en runnen!
 
 Pas op: runnen duurt lang, makkelijk een half uur. Het duurt langer voor grotere afbeeldingen en onze smartphones maken erg scherpe grote afbeeldingen. Probeer foto's kleiner dan 600x600 pixels te gebruiken. Grotere foto's kunnen in kwaliteit worden teruggebracht met websites als deze: https://www.reduceimages.com/. Of met lokale software als het foto's zijn die je niet zomaar naar iedere website wil uploaden.
