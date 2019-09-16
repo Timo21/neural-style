@@ -17,10 +17,10 @@ Dit platform, github, is het meest gebruikte platform om open-source code met an
 
 Voor al die bewerkingen wordt het programma GIT gebruikt. Vandaag zullen we dat niet gebruiken omdat het extra stappen kost en we de code toch alleen lokaal willen draaien en niet allemaal tegelijk willen bewerken. Mocht je later geïnteresseerd zijn in GIT of het nu toch willen testen, het programma is [hier](https://github.com/anishathalye/neural-style) gratis te downloaden.
 
-# Acties
+### Acties
 Wat we wel gaan doen is de code simpelweg downloaden. Rechts bovenaan deze pagina vind je een groene knop met "Clone or download". Als je daarop klikt zie je de git URL die je zou kunnen gebruiken als je git gebruikt. Wij gaan echter voor "Download ZIP" waardoor de code als zip folder in je downloads terecht komt. Pak de map uit met je favoriete zip-programma en kopieer de map naar een plek op je laptop waar je hem terug kan vinden.
 
-
+## Python
 
 
 
