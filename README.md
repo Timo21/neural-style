@@ -89,3 +89,10 @@ Je kan tekst zoals deze naar de command prompt plakken door normaal te kopieren 
 Pas op: runnen duurt lang, makkelijk een half uur. Het duurt langer voor grotere afbeeldingen en onze smartphones maken erg scherpe grote afbeeldingen. Probeer foto's kleiner dan 600x600 pixels te gebruiken. Grotere foto's kunnen in kwaliteit worden teruggebracht met websites als deze: https://www.reduceimages.com/. Of met lokale software als het foto's zijn die je niet zomaar naar iedere website wil uploaden.
 
 Er zijn nog allerlei extra opties die je aan of uit kan zetten. Kijk daarvoor op de originele github pagina: https://github.com/anishathalye/neural-style
+
+## License
+
+Copyright (c) 2015-2019 Anish Athalye. Released under GPLv3. See
+[LICENSE.txt][license] for details.
+
+[net]: http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat
