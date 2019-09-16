@@ -3,18 +3,26 @@
 Jullie hebben zojuist uitleg gehad over de achtergrond van Neural Networks en de Neural Style Transfer techniek.
 Voor geïnteresseerden is een van de originele papers waarin dit idee werd toegepast in 2015 [hier](https://arxiv.org/pdf/1508.06576v2.pdf) te vinden.
 
-Deze implementatie en code is origineel geschreven door Anish Athalye, copyright behoort hem dus toe. Zijn github pagina is: [https://github.com/anishathalye/neural-style]. Hij heeft het vrijgegeven onder GNU GPL 3.0 wat een zeer vrije licentie is en betekent dat je dit voor allerlei implementaties, zelfs commerciele, mag gebruiken zo lang je het origineel maar correct citeert. Ik heb kleine aanpassingen gedaan om het nog makkelijker out-of-the-box te laten werken.
+Deze implementatie en code is origineel geschreven door Anish Athalye, copyright behoort hem dus toe. Zijn github pagina is: https://github.com/anishathalye/neural-style. Hij heeft het vrijgegeven onder GNU GPL 3.0 wat een zeer vrije licentie is en betekent dat je dit voor allerlei implementaties, zelfs commerciele, mag gebruiken zo lang je het origineel maar correct citeert. Ik heb kleine aanpassingen gedaan om het nog makkelijker out-of-the-box te laten werken.
 
 # Installatiehandleiding
 
 Er zijn een aantal stappen die we moeten uitvoeren voordat we dit model zelf kunnen draaien en onze eigen foto's met schilderstijlen kunnen combineren. Een van de stappen is het lokaal krijgen van de code en bestanden die door Anish Athalye met de open-source community gedeeld zijn. Een andere belangrijke stap is het installeren van Python en alle bijbehorende libraries (packages). Deze handleiding is ontworpen voor mensen die Python nog niet eerder hebben gebruikt en gaat er dus van uit dat dat nog geinstalleerd moet worden. We gaan in deze beperkte tijd niet in op hoe Python precies werkt maar als er vragen over zijn stel ze natuurlijk vooral.
 
+Bij iedere stap zal ik wat achtergrond informatie geven over hoe het precies in zijn werk gaat (toelichting) en los de acties voor het installeren beschrijven (acties) zodat je alleen dat deel hoeft te lezen als je niet in de achtergrond van een stap geïnteresseerd bent.
+
 ## Het lokaal krijgen van de code
+### Toelichting GIT
 Dit platform, github, is het meest gebruikte platform om open-source code met anderen te delen. Er zijn ook mogelijkheden om code prive te delen met anderen en veel bedrijven hebben dan ook hun eigen, afgeschermde, bedrijfs-git. Naast het delen van code heeft het veel functionaliteiten om gezamenlijk code te schrijven zonder in de problemen te komen. Je kan het je voorstellen alsof je tegelijkertijd in dezelfde online google Sheet Excel werkt als een collega en google er voor zorgt dat je niet tegelijkertijd dezelfde cel aanpast. Zo kan GIT bijhouden dat je niet dezelfde regel code aanpast in een bewerking en daardoor in de problemen komt.
 
 Voor al die bewerkingen wordt het programma GIT gebruikt. Vandaag zullen we dat niet gebruiken omdat het extra stappen kost en we de code toch alleen lokaal willen draaien en niet allemaal tegelijk willen bewerken. Mocht je later geïnteresseerd zijn in GIT of het nu toch willen testen, het programma is [hier](https://github.com/anishathalye/neural-style) gratis te downloaden.
 
+# Acties
 Wat we wel gaan doen is de code simpelweg downloaden. Rechts bovenaan deze pagina vind je een groene knop met "Clone or download". Als je daarop klikt zie je de git URL die je zou kunnen gebruiken als je git gebruikt. Wij gaan echter voor "Download ZIP" waardoor de code als zip folder in je downloads terecht komt. Pak de map uit met je favoriete zip-programma en kopieer de map naar een plek op je laptop waar je hem terug kan vinden.
+
+
+
+
 
 ## Related Projects
 
