@@ -7,7 +7,7 @@ Deze implementatie en code is origineel geschreven door Anish Athalye, copyright
 
 # Installatiehandleiding
 
-Er zijn een aantal stappen die we moeten uitvoeren voordat we dit model zelf kunnen draaien en onze eigen foto's met schilderstijlen kunnen combineren. Een van de stappen is het lokaal krijgen van de code en bestanden die door Anish Athalye met de open-source community gedeeld zijn. Een andere belangrijke stap is het installeren van Python en alle bijbehorende libraries (packages). Deze handleiding is ontworpen voor mensen die Python nog niet eerder hebben gebruikt en gaat er dus van uit dat dat nog geinstalleerd moet worden. We gaan in deze beperkte tijd niet in op hoe Python precies werkt maar als er vragen over zijn stel ze natuurlijk vooral.
+Er zijn een aantal stappen die we moeten uitvoeren voordat we dit model zelf kunnen draaien en onze eigen foto's met schilderstijlen kunnen combineren. Een van de stappen is het lokaal krijgen van de code en bestanden die door Anish Athalye met de open-source community gedeeld zijn. Een andere belangrijke stap is het installeren van Python en alle bijbehorende packages. Deze handleiding is ontworpen voor mensen die Python nog niet eerder hebben gebruikt en gaat er dus van uit dat dat nog geinstalleerd moet worden. We gaan in deze beperkte tijd niet in op hoe Python precies werkt maar als er vragen over zijn stel ze natuurlijk vooral.
 
 Bij iedere stap zal ik wat achtergrond informatie geven over hoe het precies in zijn werk gaat (toelichting) en los de acties voor het installeren beschrijven (acties) zodat je alleen dat deel hoeft te lezen als je niet in de achtergrond van een stap geïnteresseerd bent.
 
@@ -53,162 +53,31 @@ Wij zullen vandaag niet met een IDE werken omdat we toch niet zelf python code g
 ### Acties
 De command prompt moet geopend worden in de folder met de gedownloade code. De makkelijkste manier om dit te doen is om in de verkenner naar de juiste folder te gaan en shift+rechtermuis te klikken. De shift voegt opties aan het menu toe en je ziet nu waarschijnlijk "open PowerShell window here" of "open command prompt here", daar klik je op. Een nieuw venster opent waar je commando's kan typen. Om de command prompt te laten weten dat je een python script wil draaien type je `python <naam script>` test het nu met `python test_python.py` om het testscript dat in de map staat te draaien en je zou een aanmoedigende boodschap moeten zien.
 
-## Python libraries
+## Python packages
 
 ### Toelichting
+Net als in R kun je met een "kale" Python installatie nog niet heel veel en moet je packages installeren om echt interessant werk te kunnen doen. Hier onder volgt een overzicht van de drie belangrijkste R packages waar we mee hebben leren werken en hun Python tegenhangers:
+
+| Doel | R Pacakge | Python Package |
+| --- | --- | --- |
+| Data en tabelbewerkingen | dplyr | pandas |
+| Visualisatie (plots) | ggplot | matplotlib (of plotly) |
+| Machine learning| caret | scikit-learn |
+
+Nadat je Python hebt geinstalleerd kan je een package los installeren vanaf de command prompt met `pip install <package naam>`, dus bijvoorbeeld `pip install pandas`. Je kan ook meerdere packages in 1 keer installeren. Al onze benodigde packages staan in het bestand `requirements.txt` en met het commando `pip install -r requirements.txt` zullen deze allemaal geinstalleerd worden. 
 
 ### Acties
+In de command prompt run je `pip install -r requirements.txt`.
+Krijg je een error dan kan het zijn dat je een dependency mist, vraag het aan een van ons!
 
 ## Runnen!
 
 ### Toelichting
+Je bent er eindelijk klaar voor om met behulp van Neural Networks een schilderstijl toe te gaan passen op een foto. Of dat nou een mooi resultaat gaat opleveren of niet, je hebt onderweg geleerd hoe de open-source community werkt, python aan de praat gekregen en geleerd hoe je packages installeert. Al een mooi resultaat op zichzelf!
 
 ### Acties
+Vanaf de commandline kun je met dit commando een afbeelding produceren: `python neural_style.py --content <content file> --styles <style file> --output <output file>` dus bijvoorbeeld met `python neural_style.py --content examples/emiel.jpg --styles examples/1-style.jpg --output output_foto.jpg`. Je kan tekst zoals deze naar de command prompt plakken door normaal te kopieren (ctrl+c) en te plakken met shift+insert in de command prompt. Zet in de examples folder je eigen foto's, pas het commando aan en runnen!
 
-## Related Projects
+Pas op: runnen duurt lang, makkelijk een half uur. Het duurt langer voor grotere afbeeldingen en onze smartphones maken erg scherpe grote afbeeldingen. Probeer foto's kleiner dan 600x600 pixels te gebruiken. Grotere foto's kunnen in kwaliteit worden teruggebracht met websites als deze: https://www.reduceimages.com/. Of met lokale software als het foto's zijn die je niet zomaar naar iedere website wil uploaden.
 
-See [here][lengstrom-fast-style-transfer] for an implementation of [fast
-(feed-forward) neural style][fast-neural-style] in TensorFlow.
-
-**[Try neural style](https://tenso.rs/demos/fast-neural-style/) client-side in
-your web browser without installing any software (using
-[TensorFire](https://tenso.rs/)).**
-
-## Running
-
-`python neural_style.py --content <content file> --styles <style file> --output <output file>`
-
-Run `python neural_style.py --help` to see a list of all options.
-
-If you are running this project on [Floydhub](https://www.floydhub.com) you can use the following syntax (this pulls in the pre-trained VGG network automatically):
-
-`floyd run --gpu --env tensorflow-1.3
---data  floydhub/datasets/imagenet-vgg-verydeep-19/3:vgg
-"python neural_style.py --network /vgg/imagenet-vgg-verydeep-19.mat --content <content file> --styles <style file> --output <output file>"`
-
-
-Use `--checkpoint-output` and `--checkpoint-iterations` to save checkpoint images.
-
-Use `--iterations` to change the number of iterations (default 1000).  For a 512×512 pixel content file, 1000 iterations take 60 seconds on a GTX 1080 Ti, 90 seconds on a Maxwell Titan X, or 60 minutes on an Intel Core i7-5930K. Using a GPU is highly recommended due to the huge speedup.
-
-## Example 1
-
-Running it for 500-2000 iterations seems to produce nice results. With certain
-images or output sizes, you might need some hyperparameter tuning (especially
-`--content-weight`, `--style-weight`, and `--learning-rate`).
-
-The following example was run for 1000 iterations to produce the result (with
-default parameters):
-
-![output](examples/1-output.jpg)
-
-These were the input images used (me sleeping at a hackathon and Starry Night):
-
-![input-content](examples/1-content.jpg)
-
-![input-style](examples/1-style.jpg)
-
-## Example 2
-
-The following example demonstrates style blending, and was run for 1000
-iterations to produce the result (with style blend weight parameters 0.8 and
-0.2):
-
-![output](examples/2-output.jpg)
-
-The content input image was a picture of the Stata Center at MIT:
-
-![input-content](examples/2-content.jpg)
-
-The style input images were Picasso's "Dora Maar" and Starry Night, with the
-Picasso image having a style blend weight of 0.8 and Starry Night having a
-style blend weight of 0.2:
-
-![input-style](examples/2-style1.jpg)
-![input-style](examples/2-style2.jpg)
-
-## Tweaking
-
-`--style-layer-weight-exp` command line argument could be used to tweak how "abstract"
-the style transfer should be. Lower values mean that style transfer of a finer features
-will be favored over style transfer of a more coarse features, and vice versa. Default
-value is 1.0 - all layers treated equally. Somewhat extreme examples of what you can achieve:
-
-![--style-layer-weight-exp 0.2](examples/tweaks/swe02.jpg)
-![--style-layer-weight-exp 2.0](examples/tweaks/swe20.jpg)
-
-(**left**: 0.2 - finer features style transfer; **right**: 2.0 - coarser features style transfer)
-
-`--content-weight-blend` specifies the coefficient of content transfer layers. Default value -
-1.0, style transfer tries to preserve finer grain content details. The value should be
-in range [0.0; 1.0].
-
-![--content-weight-blend 1.0](examples/tweaks/cwe10_default.jpg)
-![--content-weight-blend 0.1](examples/tweaks/cwe01.jpg)
-
-(**left**: 1.0 - default value; **right**: 0.1 - more abstract picture)
-
-`--pooling` allows to select which pooling layers to use (specify either `max` or `avg`).
-Original VGG topology uses max pooling, but the [style transfer paper][paper] suggests
-replacing it with average pooling. The outputs are perceptually different, max pool in
-general tends to have finer detail style transfer, but could have troubles at
-lower-freqency detail level:
-
-![--pooling max](examples/tweaks/swe14_pmax.jpg)
-![--pooling avg](examples/tweaks/swe14_pavg.jpg)
-
-(**left**: max pooling; **right**: average pooling)
-
-`--preserve-colors` boolean command line argument adds post-processing step, which
-combines colors from the original image and luma from the stylized image (YCbCr color
-space), thus producing color-preserving style transfer:
-
-![--pooling max](examples/tweaks/swe14_pmax.jpg)
-![--pooling max](examples/tweaks/swe14_pmax_pcyuv.jpg)
-
-(**left**: original stylized image; **right**: color-preserving style transfer)
-
-## Requirements
-
-### Data Files
-
-* [Pre-trained VGG network][net] (MD5 `106118b7cf60435e6d8e04f6a6dc3657`) - put it in the top level of this repository, or specify its location using the `--network` option.
-
-### Dependencies
-
-You can install Python dependencies using `pip install -r requirements.txt`,
-and it should just work. If you want to install the packages manually, here's a
-list:
-
-* [TensorFlow](https://www.tensorflow.org/versions/master/get_started/os_setup.html#download-and-setup)
-* [NumPy](https://github.com/numpy/numpy/blob/master/INSTALL.rst.txt)
-* [SciPy](https://github.com/scipy/scipy/blob/master/INSTALL.rst.txt)
-* [Pillow](http://pillow.readthedocs.io/en/3.3.x/installation.html#installation)
-
-## Citation
-
-If you use this implementation in your work, please cite the following:
-
-```
-@misc{athalye2015neuralstyle,
-  author = {Anish Athalye},
-  title = {Neural Style},
-  year = {2015},
-  howpublished = {\url{https://github.com/anishathalye/neural-style}},
-  note = {commit xxxxxxx}
-}
-```
-
-## License
-
-Copyright (c) 2015-2019 Anish Athalye. Released under GPLv3. See
-[LICENSE.txt][license] for details.
-
-[net]: http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat
-[paper]: http://arxiv.org/pdf/1508.06576v2.pdf
-[l-bfgs]: https://en.wikipedia.org/wiki/Limited-memory_BFGS
-[adam]: http://arxiv.org/abs/1412.6980
-[ad]: https://en.wikipedia.org/wiki/Automatic_differentiation
-[lengstrom-fast-style-transfer]: https://github.com/lengstrom/fast-style-transfer
-[fast-neural-style]: https://arxiv.org/pdf/1603.08155v1.pdf
-[license]: LICENSE.txt
+Er zijn nog allerlei extra opties die je aan of uit kan zetten. Kijk daarvoor op de originele github pagina: https://github.com/anishathalye/neural-style
