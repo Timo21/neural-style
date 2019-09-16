@@ -96,3 +96,4 @@ Copyright (c) 2015-2019 Anish Athalye. Released under GPLv3. See
 [LICENSE.txt][license] for details.
 
 [net]: http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat
+[license]: LICENSE.txt
