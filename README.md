@@ -3,7 +3,7 @@
 Jullie hebben zojuist uitleg gehad over de achtergrond van Neural Networks en de Neural Style Transfer techniek.
 Voor geïnteresseerden is een van de originele papers waarin dit idee werd toegepast in 2015 [hier](https://arxiv.org/pdf/1508.06576v2.pdf) te vinden.
 
-Deze implementatie en code is origineel geschreven door Anish Athalye, copyright behoort hem dus toe. Zijn github pagina is: https://github.com/anishathalye/neural-style. Hij heeft het vrijgegeven onder GNU GPL 3.0 wat een zeer vrije licentie is en betekent dat je dit voor allerlei implementaties, zelfs commerciele, mag gebruiken zo lang je het origineel maar correct citeert. Ik heb kleine aanpassingen gedaan om het nog makkelijker out-of-the-box te laten werken.
+Deze implementatie en code is origineel geschreven door Anish Athalye, copyright behoort hem dus toe. Zijn github pagina is: https://github.com/anishathalye/neural-style. Hij heeft het vrijgegeven onder GNU GPL 3.0 wat een zeer vrije licentie is en betekent dat je dit voor allerlei implementaties, zelfs commerciele, mag gebruiken zo lang je naar het origineel refereert.
 
 # Installatiehandleiding
 
