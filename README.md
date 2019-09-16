@@ -39,11 +39,19 @@ In de eeste stap van de installer moet "Add to PATH" worden aangevinkt *(belangr
 
 ![Afbeelding](https://vgkits.org/blog/wp-content/uploads/2018/05/windows-add-python-path.jpg)
 
-## De command line
+## IDEs en de command prompt
 
 ### Toelichting
+Om te ontwikkelen in een programmeertaal gebruik je meestal een Integrated Development Environment (IDE). RStudio is veruit de meest gebruikte IDE voor R, maar je kan in principe een R programma runnen en zelfs schrijven zonder RStudio (geen aanrader). De Python community is verdeelder en er is niet 1 IDE die iedereen gebruikt zoals by R. Veel gebruikte IDEs voor Python zijn:
+
+- [Pycharm](https://www.jetbrains.com/pycharm/)
+- [VSCode](https://code.visualstudio.com/)
+- [Spyder](https://www.spyder-ide.org/)
+
+Wij zullen vandaag niet met een IDE werken omdat we toch niet zelf python code gaan schrijven en dat weer extra stappen vereist. Als je Python hebt geïnstalleerd kan je bestaande script ook runnen vanaf de command prompt en dat is wat we vandaag zullen doen. Als je later deze scripts of andere wilt bewerken is het aan te raden wel een van bovenstaande IDEs te gebruiken.
 
 ### Acties
+De command prompt moet geopend worden in de folder met de gedownloade code. De makkelijkste manier om dit te doen is om in de verkenner naar de juiste folder te gaan en shift+rechtermuis te klikken. De shift voegt opties aan het menu toe en je ziet nu waarschijnlijk "open PowerShell window here" of "open command prompt here", daar klik je op. Een nieuw venster opent waar je commando's kan typen. Om de command prompt te laten weten dat je een python script wil draaien type je `python <naam script>` test het nu met `python test_python.py` om het testscript dat in de map staat te draaien en je zou een aanmoedigende boodschap moeten zien.
 
 ## Python libraries
 
