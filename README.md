@@ -34,7 +34,7 @@ Het model kan gedownload worden door [hier te klikken][net]. Als de download kla
 Zoals eerder beschreven gaan we hier geen uitgebreide instructie over Python geven maar toch wat toelichting. Python is net als R een open-source programmeertaal waarmee je allerlei berekeningen, data analyses en visualisaties kan maken. De syntax, de manier waarop je de taal schrijft, verschilt van R, maar alles dat je in de opleiding in R geleerd hebt is ook op een manier in Python mogelijk. Wat zijn dan belangrijke verschillen? In beide talen zijn verschillende packages beter uitgewerkt door de community. Zo zijn in R meer packages beschikbaar voor uitgebreide statistische analyse en is er in Python meer beschikbaar om hele andere dingen te doen zoals websites bouwen. R is van oudsher een taal ontwikkeld voor en door statistici en data analisten, Python voor en door programmeurs. Daardoor is het in de regel in R makkelijker lokaal op je laptop een gedegen analyse te maken, maar is het in Python makkelijker je analyse aan miljoenen mensen stabiel online beschikbaar te stellen. Voor meer informatie over verschillen tussen beide biedt [deze website een goed overzicht](https://www.guru99.com/r-vs-python.html#targetText=R%20is%20mainly%20used%20for,of%20course%2C%20the%20ideal%20solution).
 
 ### Acties
-Download de laatste versie van Python door [op deze website](https://www.python.org/downloads/) op de gele download knop te klikken.
+Het meest gebruikte Neural Network package, Tensorflow, dat wij ook gebruiken, werkt nog niet met de laatste versie van Python. We gaan daarom versie 3.6 downloaden. Download het [op deze website](https://www.python.org/downloads/release/python-368/) voor jouw systeem, waarschijnlijk wil je de "Windows x86-64 executable installer" hebben.
 In de eeste stap van de installer moet "Add to PATH" worden aangevinkt *(belangrijk!)* zoals in onderstaande afbeelding, verder kunnen de standaard instructies van de installer gevolgd worden.
 
 ![Afbeelding](https://vgkits.org/blog/wp-content/uploads/2018/05/windows-add-python-path.jpg)
@@ -51,7 +51,7 @@ Om te ontwikkelen in een programmeertaal gebruik je meestal een Integrated Devel
 Wij zullen vandaag niet met een IDE werken omdat we toch niet zelf python code gaan schrijven en dat weer extra stappen vereist. Als je Python hebt geïnstalleerd kan je bestaande script ook runnen vanaf de command prompt en dat is wat we vandaag zullen doen. Als je later deze scripts of andere wilt bewerken is het aan te raden wel een van bovenstaande IDEs te gebruiken.
 
 ### Acties
-De command prompt moet geopend worden in de folder met de gedownloade code. De makkelijkste manier om dit te doen is om in de verkenner naar de juiste folder te gaan en shift+rechtermuis te klikken. De shift voegt opties aan het menu toe en je ziet nu waarschijnlijk "open PowerShell window here" of "open command prompt here", daar klik je op. Een nieuw venster opent waar je commando's kan typen. Om de command prompt te laten weten dat je een python script wil draaien type je `python <naam script>` test het nu met `python test_python.py` om het testscript dat in de map staat te draaien en je zou een aanmoedigende boodschap moeten zien.
+De command prompt moet geopend worden in de folder met de gedownloade code. De makkelijkste manier om dit te doen is om in de verkenner naar de juiste folder te gaan en shift+rechtermuis te klikken. De shift voegt opties aan het menu toe en je ziet nu waarschijnlijk "open PowerShell window here" of "open command prompt here", daar klik je op. Een nieuw venster opent waar je commando's kan typen. Om de command prompt te laten weten dat je een python script wil draaien type je `python naam-van-jouw-script` waarbij je `naam-van-jouw-script` vervangd met de bestandsnaam van het Python bestand. Test het nu door `python test_python.py` te runnen. Runnen gebruiken we als afkorting voor "typ dit commando in het command prompt en druk op enter". Als het goed is draait dit het testscript in de map en je zou een aanmoedigende boodschap moeten zien.
 
 ## Python packages
 
@@ -76,7 +76,7 @@ Krijg je een error dan kan het zijn dat je een dependency mist, vraag het aan ee
 Je bent er eindelijk klaar voor om met behulp van Neural Networks een schilderstijl toe te gaan passen op een foto. Of dat nou een mooi resultaat gaat opleveren of niet, je hebt onderweg geleerd hoe de open-source community werkt, python aan de praat gekregen en geleerd hoe je packages installeert. Al een mooi resultaat op zichzelf!
 
 ### Acties
-Vanaf de commandline kun je met dit commando een afbeelding produceren:
+Vanaf de commandline kun je met dit commando een afbeelding produceren (alles tussen <> is een voorbeeld, je typt normaal de <> niet daadwerkelijk):
 
 `python neural_style.py --content <content file> --styles <style file> --output <output file>`
 
