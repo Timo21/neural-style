@@ -86,7 +86,7 @@ Dus bijvoorbeeld met:
 
 Je kan tekst zoals deze naar de command prompt plakken door normaal te kopieren (ctrl+c) en te plakken met shift+insert in de command prompt. Zet in de examples folder je eigen foto's, pas het commando aan en runnen! Er kunnen warnings gegeven worden dat is over het algemeen geen probleem. Errors zijn natuurlijk wel een probleem. Na een tijdje moet je gaan zien dat er iteraties gaan lopen met een geschatte tijd die het nog duurt tot het script gedraaid is.
 
-Pas op: runnen duurt lang, makkelijk een half uur. Het duurt langer voor grotere afbeeldingen en onze smartphones maken erg scherpe grote afbeeldingen. Probeer foto's kleiner dan 600x600 pixels te gebruiken. Grotere foto's kunnen in kwaliteit worden teruggebracht met websites als deze: https://resizeimage.net/. Of met lokale software als het foto's zijn die je niet zomaar naar iedere website wil uploaden.
+Pas op: runnen duurt lang, makkelijk een half uur. Het duurt langer voor grotere afbeeldingen en onze smartphones maken erg scherpe grote afbeeldingen. Probeer foto's kleiner dan 450x450 pixels te gebruiken. Grotere foto's kunnen in kwaliteit worden teruggebracht met websites als deze: https://resizeimage.net/. Of met lokale software als het foto's zijn die je niet zomaar naar iedere website wil uploaden.
 
 Er zijn nog allerlei extra opties die je aan of uit kan zetten. Kijk daarvoor op de originele github pagina: https://github.com/anishathalye/neural-style
 
